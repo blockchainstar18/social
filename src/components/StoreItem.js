@@ -20,7 +20,7 @@ export const StoreItem = ({ img, title, price, icon }) => {
       <div className="ml-6">
         <div className="flex items-center">
           <div className="text-[#00106D] font-bold mr-3">{title}</div>
-          <img src={icon}></img>
+          <img src={icon} className="hidden sm:block"></img>
         </div>
         <div className="text-[#B947F2] font-bold">{price}</div>
       </div>

@@ -21,7 +21,7 @@ export const SideBar = () => {
   console.log(window.location.href);
 
   return (
-    <div className="min-w-[350px] min-h-[100vh] bg-[#fce5ec7c]">
+    <div className="hidden sm:block min-w-[350px] min-h-[100vh] bg-[#fce5ec7c]">
       <div className="my-[50px] ml-[30px] flex items-center">
         <img className="" src={logo}></img>
         <img className="" src={hypeit}></img>

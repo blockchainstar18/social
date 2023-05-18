@@ -17,7 +17,7 @@ export const Revenue = () => {
 
   return (
     <div className="p-[20px]">
-      <div className="flex">
+      <div className="sm:flex block">
         <div className="w-full">
           <div className="flex items-center relative">
             <div className="text-[#888EB8]">Total Revenue</div>
@@ -33,7 +33,7 @@ export const Revenue = () => {
             ></img>
 
             {show ? (
-              <div className="absolute top-[50px] border-[1px] border-gray shadow-lg text-[#00106D] p-[10px] bg-white w-[400px] rounded-[10px]">
+              <div className="absolute top-[50px] border-[1px] border-gray shadow-lg text-[#00106D] p-[10px] bg-white w-[380px] rounded-[10px] z-10">
                 <div className="font-bold">Revenue Breakdown</div>
                 <div>
                   Stripe:
@@ -57,7 +57,7 @@ export const Revenue = () => {
           <div className="text-[#00106D] font-bold text-[40px]">$0.00</div>
           {/* <div className="h-[200px] border-[1px] border-black"></div> */}
         </div>
-        <div className="w-[800px] h-min p-[30px] rounded-[20px] shadow-lg ml-6">
+        <div className="sm:w-[800px] w-full h-min p-[30px] rounded-[20px] shadow-lg">
           <div className="flex items-center gap-6">
             <div>
               <div className="flex items-center relative">
@@ -131,7 +131,7 @@ export const Revenue = () => {
           <div>Email</div>
         </div>
 
-        <div className="grid justify-items-start grid-cols-4 text-[#00106D] my-1">
+        <div className="hidden sm:grid justify-items-start grid-cols-4 text-[#00106D] my-1">
           <div>17/08/2023</div>
           <div>Video Audit</div>
           <div>$50</div>
@@ -143,40 +143,42 @@ export const Revenue = () => {
         <div className="text-[#00106D] font-bold">Referral Income</div>
 
         <div className="flex justify-around gap-4 mt-4">
-          <div className="w-full border-[1px] border-[#EBEBFF] p-[20px] rounded-[20px]">
+          <div className="w-full border-[1px] border-[#EBEBFF] p-[10px] rounded-[20px]">
             <div className="text-[#888EB8]">Active Referrals</div>
             <div className="text-[#00106D] text-[24px] font-bold">0</div>
           </div>
-          <div className="w-full border-[1px] border-[#EBEBFF] p-[20px] rounded-[20px]">
+          <div className="w-full border-[1px] border-[#EBEBFF] p-[10px] rounded-[20px]">
             <div className="text-[#888EB8]">Active Referrals</div>
             <div className="text-[#00106D] text-[24px] font-bold">0</div>
           </div>
-          <div className="w-full border-[1px] border-[#EBEBFF] p-[20px] rounded-[20px]">
+          <div className="w-full border-[1px] border-[#EBEBFF] p-[10px] rounded-[20px]">
             <div className="text-[#888EB8]">Active Referrals</div>
             <div className="text-[#00106D] text-[24px] font-bold">0</div>
           </div>
         </div>
 
-        <div className="justify-center flex font-bold mt-6">
-          <div className="text-[#00106D] font-bold">
+        <div className="justify-center text-center font-bold mt-6">
+          <span className="text-[#00106D] font-bold">
             Refer a friend to Hype It to earn monthly recurring income
-          </div>
-          <div className="underline  text-[#B947F2]">join.hypeit.store/bk1</div>
+          </span>
+          <span className="underline text-[#B947F2]">
+            join.hypeit.store/bk1
+          </span>
         </div>
 
-        <div className="justify-center flex font-bold">
-          <div className="text-[#00106D] font-bold">
-            For each friend that joins Hype It using your link, you{" "}
-          </div>
-          <div className="underline text-[#B947F2]"> earn 20% profit</div>
-          <div className="text-[#00106D] font-bold">share every month.</div>
+        <div className="justify-center text-center font-bold">
+          <span className="text-[#00106D] font-bold">
+            For each friend that joins Hype It using your link, you
+          </span>
+          <span className="underline text-[#B947F2]"> earn 20% profit</span>
+          <span className="text-[#00106D] font-bold">share every month.</span>
         </div>
       </div>
 
       <div className="p-[30px] rounded-[20px] shadow-lg mt-6 border-[1px] border-[#EBEBFF] flex items-center justify-end relative">
         <div className="absolute left-[30px] flex items-center">
-          <img src={heart}></img>
-          <div className="font-bold text-[#00106D] ml-2">
+          <img src={heart} className="hidden sm:flex"></img>
+          <div className="font-bold text-[#00106D] ml-2 hidden sm:flex">
             Share Referral Link
           </div>
         </div>

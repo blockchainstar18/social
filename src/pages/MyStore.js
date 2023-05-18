@@ -46,7 +46,7 @@ export const MyStore = () => {
     <div className="p-[20px] flex">
       {header == "My Store" ? (
         <>
-          <div className="mr-6 w-full">
+          <div className="w-full">
             <div className="border-[1px] border-[#EBEBFF] rounded-[10px] p-[20px] shadow-lg flex mb-6">
               <img src={John} width={100}></img>
 
@@ -120,7 +120,7 @@ export const MyStore = () => {
               Add Product
             </div>
           </div>
-          <div className="min-w-[500px] flex justify-center items-center">
+          <div className="hidden sm:flex min-w-[500px] flex justify-center items-center">
             <img src={phone}></img>
             <div className="absolute w-[320px] h-[640px] text-white scrollcontainer overflow-scroll">
               <div className="flex justify-center">
@@ -257,7 +257,7 @@ export const MyStore = () => {
           </div>
         </>
       ) : (
-        <div className="grid gap-[20px] grid-cols-2 justify-around w-full">
+        <div className="grid gap-[20px] sm:grid-cols-2 justify-around w-full">
           <ProductItem
             img={collet}
             title="Collect Emails / Applications"
